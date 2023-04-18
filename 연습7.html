@@ -1,0 +1,31 @@
+
+<style>
+    [data-size=large] {font-size: 1.7px;}
+    [data-size=small] {font-size: 0.7px;}
+    [bg=yellow] > span {background-color: yellow; color: red;}
+</style>
+<!-- []와/이건 속성선택자 {}의/이건 태그 차이? -->
+<!-- 밑에 li의 하위요소가 span으로 들어가네 여기서 < span으로 넣어주는 것 -->
+<body>
+    <p>selector</p>
+    <ul>
+        <li>
+            <p>tag</p>
+        </li>
+        <li><span>class</span></li>
+        <li>
+            <p>id</p>
+        </li>
+        <li bg='yellow'><span data-size='large'>
+                attribute</span></li>
+        <li>
+            <p>descendant / child</p>
+        </li>
+        <li><span data-size='small'>
+                siblings / adjacent</span></li>
+        <li>
+            <p data-size='large'>pseudo</p>
+        </li>
+    </ul>
+
+</body>
